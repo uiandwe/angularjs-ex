@@ -12,6 +12,7 @@ angular.module('hlApp')
         $http.get('http://localhost:9000/subscribers.json').success(function(data) {
             $scope.subscribers = data;
 
+
         });
         $scope.gridOptions = {
             data: 'subscribers',
