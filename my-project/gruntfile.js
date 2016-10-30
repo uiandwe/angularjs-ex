@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     // Project configuration.
     grunt.initConfig({
- 
+
  	jshint:{
     	all:['scripts.js']
  	},
@@ -22,6 +22,7 @@ module.exports = function(grunt) {
     	multiple: {
         	command: [
             	'rm -rf merged.js',
+              	'rm -rf deploy',
             	'mkdir deploy',
             	'mv build/merged.min.js deploy/merged.min.js'
         	].join('&&')
