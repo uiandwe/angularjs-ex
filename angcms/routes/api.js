@@ -5,9 +5,9 @@ var Page = require('../models/page.js');
 var adminUser = require('../models/admin-users.js');
 
 
-router.get('/', function(req, res){
-    res.send('wwwwwww');
-});
+//router.get('/', function(req, res){
+//    res.send('wwwwwww');
+//});
 
 router.get('/pages', function(req, res){
     return Page.find(function(err, pages){
