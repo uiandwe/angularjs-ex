@@ -32,6 +32,7 @@ angular.module('myApp.controllers', [])
         $http.get('http://127.0.0.1:3000/api/pages').
             success(function(data){
                 console.log(data);
+                 $scope.slides = data;
             }
 
         )
