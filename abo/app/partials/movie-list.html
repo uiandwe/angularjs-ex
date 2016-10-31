@@ -5,7 +5,7 @@
   <div ng-repeat="movie in movies">
     <div class="thumbnail">
     	 <h3 class="caption">{{movie.title}}</h3>
-      <img width="180" src="{{movie.posters.detailed}}" alt="{{movie.title}}">
+      <img width="180" src="{{ movie.posters.detailed }}" alt="{{movie.title}}">
         <p>{{movie.synopsis}}</p>
     </div>
   </div>
